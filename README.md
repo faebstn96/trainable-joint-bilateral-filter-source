@@ -2,7 +2,7 @@
 
 This repository implements a GPU-accelerated trainable joint bilateral filter layer (guidance image + three spatial and one range filter dimension) that can be directly included in any Pytorch graph, just as any conventional layer (FCL, CNN, ...). By calculating the analytical derivative of the joint bilateral filter with respect to its parameters, the guidance image, and the input, the (so far) hyperparameters can be automatically optimized via backpropagation for a calculated loss.
 
-Our corresponding paper [Trainable Joint Bilateral Filters for Enhanced Prediction Stability in Low-dose CT](https://arxiv.org/) can be found on [arXiv](https://arxiv.org/) (pre-print).
+Our corresponding paper [Trainable Joint Bilateral Filters for Enhanced Prediction Stability in Low-dose CT](https://arxiv.org/pdf/2207.07368.pdf) can be found on [arXiv](https://arxiv.org/abs/2207.07368) (pre-print).
 
 ### Citation:
 If you find our code useful, please cite our work
@@ -10,9 +10,9 @@ If you find our code useful, please cite our work
 @article{wagner2022trainable,
   title={Trainable Joint Bilateral Filters for Enhanced Prediction Stability in Low-dose CT},
   author={Wagner, Fabian and Thies, Mareike and Denzinger, Felix and Gu, Mingxuan and Patwari, Mayank and Ploner, Stefan and Maul, Noah and Pfaff, Laura and Huang, Yixing and Maier, Andreas},
-  journal={arXiv preprint arXiv:},
+  journal={arXiv preprint arXiv:2207.07368},
   year={2022},
-  doi={https://arxiv.org/}
+  doi={https://arxiv.org/abs/2207.07368}
 }
 ```
 
