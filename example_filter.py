@@ -57,7 +57,7 @@ end = time.time()
 print("Runtime forward pass: {} s".format(end - start))
 
 # Backward pass.
-loss = prediction.sum()
+loss = prediction.mean()
 start = time.time()
 loss.backward()
 end = time.time()
