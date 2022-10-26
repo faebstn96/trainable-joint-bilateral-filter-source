@@ -2,6 +2,8 @@
     :target: https://badge.fury.io/py/jointbilateralfilter_torch
 .. image:: https://img.shields.io/badge/License-Apache%202.0-blue.svg
     :target: https://opensource.org/licenses/Apache-2.0
+.. image:: https://img.shields.io/badge/DOI-10.1038/s41598--022--22530--4-B31B1B.svg
+    :target: https://doi.org/10.1038/s41598-022-22530-4
 .. image:: https://img.shields.io/badge/arXiv-2207.07368-f9f107.svg
     :target: https://arxiv.org/abs/2207.07368
 
@@ -11,7 +13,7 @@ Trainable Joint Bilateral Filter Layer (PyTorch)
 
 This repository implements a GPU-accelerated trainable joint bilateral filter layer (guidance image + three spatial and one range filter dimension) that can be directly included in any Pytorch graph, just as any conventional layer (FCL, CNN, ...). By calculating the analytical derivative of the joint bilateral filter with respect to its parameters, the guidance image, and the input, the (so far) hyperparameters can be automatically optimized via backpropagation for a calculated loss.
 
-Our associated paper `Trainable Joint Bilateral Filters for Enhanced Prediction Stability in Low-dose CT <https://arxiv.org/pdf/2207.07368.pdf>`__ can be found on `arXiv <https://arxiv.org/abs/2207.07368>`__ (pre-print).
+Our associated paper `Trainable Joint Bilateral Filters for Enhanced Prediction Stability in Low-dose CT <https://doi.org/10.1038/s41598-022-22530-4>`__ can be found in `Scientific Reports <https://doi.org/10.1038/s41598-022-22530-4>`__ (open access) or on `arXiv <https://arxiv.org/abs/2207.07368>`__ (pre-print).
 
 Setup:
 ~~~~~~
@@ -65,9 +67,13 @@ If you find our code useful, please cite our work
    @article{wagner2022trainable,
      title={Trainable Joint Bilateral Filters for Enhanced Prediction Stability in Low-dose CT},
      author={Wagner, Fabian and Thies, Mareike and Denzinger, Felix and Gu, Mingxuan and Patwari, Mayank and Ploner, Stefan and Maul, Noah and Pfaff, Laura and Huang, Yixing and Maier, Andreas},
-     journal={arXiv preprint arXiv:2207.07368},
+     journal={Scientific Reports},
+     volume={12},
+     number={1},
+     pages={1--9},
      year={2022},
-     doi={https://arxiv.org/abs/2207.07368}
+     publisher={Nature Publishing Group},
+     doi={https://doi.org/10.1038/s41598-022-22530-4}
     }
 
 Implementation:
